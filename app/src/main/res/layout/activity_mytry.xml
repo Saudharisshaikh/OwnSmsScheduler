@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Mytry">
+
+
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:layout_gravity="end"
+        android:id="@+id/switchid"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:checked="false"
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:weightSum="4">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                style="@style/commonEdit_single_line"
+                android:id="@+id/num1"
+                android:background="@color/black_background"
+                android:hint="Number"
+                android:inputType="numberSigned"
+                android:padding="5dp"
+                />
+
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_person_add_black_24dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@null"
+                />
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/id_date1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Date:"
+                    style="@style/commonText_output"
+                    android:background="@drawable/borderblue"/>
+
+
+                <TextView
+                    android:id="@+id/id_time1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Time:"
+                    style="@style/commonText_output"
+                    android:background="@drawable/borderblue"/>
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_marginBottom="20dp"
+                android:id="@+id/id_msg1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                style="@style/commonEdit_multi_line"
+                android:hint="Message"
+                android:background="@drawable/borderblue"/>
+
+
+            <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:weightSum="4">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                style="@style/commonEdit_single_line"
+                android:id="@+id/num2"
+                android:background="@color/black_background"
+                android:hint="Number"
+                android:inputType="numberSigned"
+                android:padding="5dp"
+                />
+
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_person_add_black_24dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@null"
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/start"
+                android:text="Start"
+                android:textColor="@drawable/buttoncuve"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/stop"
+                android:text="Stop"
+                android:textColor="@drawable/buttoncuve"
+                />
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
